@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6da3bf;
+}
+
+.share-btn{
+  background: linear-gradient(30deg, #3498db, #5363d8);
+  color: #fff;
+  font-family: "Montserrat";
+  border: 0;
+  padding: 16px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border-radius: 40px;
+  transition: .3s;
+}
+
+.sm-btns{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.sm-btns a{
+  color: #fff;
+  transition: .3s;
+}
+
+.share-btn:hover{
+  border-radius: 0;
+}
+
+.text, .icon{
+  display: inline-block;
+  transition: .3s;
+}
+
+.icon{
+  transition-delay: 60ms;
+}
+
+.sm-btns a:nth-child(2){
+  transition-delay: 60ms;
+}
+
+.sm-btns a:nth-child(3){
+  transition-delay: 120ms;
+}
+
+.share-btn:hover .text,
+.share-btn:hover .icon,
+.share-btn:hover .sm-btns a{
+  transform: translateY(-40px);
+}
+
+.sm-btns a:hover{
+  opacity: .7;
+}
+</style>
+</head>
+<body>
+    <button class="share-btn">
+        <span class="text">Share</span>
+        <div class="sm-btns">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+
+        </div>
+    </button>
+</body>
+</html>
